@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useParams, useLocation } from 'react-router-dom'
 import Photo from "./Photo"
-import apiKey from '../config.js'
+//import apiKey from '../config.js'
+const apiKey = process.env.apiKey
 
 const Photos = () => {
   const [flickr, setFlickr] = useState([])
